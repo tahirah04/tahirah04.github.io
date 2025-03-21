@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color:rgb(255, 255, 255);
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('..//Assets/Login\ Background.jpeg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90vh;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .Error-container {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            justify-content: space-around;
+            width: 300px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin-left: auto;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: green;
+        }
+        </style>
+</head>
+<body>
+    <div class="Error-container">
+        <center>
+            <img src="..//Assets/DC Logo.png" alt="DaleyCare Logo" style="width:250px;height:55px;">
+        </center>
+        <h1>Error</h1>
+        <p>You have made to many login attempts.</p>
+        <a href="Login.html" id="lost-pw">Please try again.</a>
+    </div>                
+</body>
+</html>

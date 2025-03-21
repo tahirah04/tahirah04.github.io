@@ -1,0 +1,130 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(255, 255, 255);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('..//Assets/Login\ Background.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.glass-container {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    justify-content: space-around;
+    width: 300px;
+}
+
+#LoginForm {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+legend {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#LoginForm {
+    padding: 20px 20px 0 20px;
+}
+
+#LoginForm input[type="text"],
+#LoginForm input[type="password"] {
+    height: 25px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: #fff;
+    padding: 5px;
+    display: inline-block;
+}
+
+#LoginForm input::placeholder {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#Login-btn {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #3117014d;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow:0px 2px 2px 0px rgba(0, 0, 0, 0.5), inset 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-size: 16px;
+  color: #04c00d;
+  font-weight: 600;
+}
+
+#Login-btn:hover {
+    background-color: green;
+    border: 1px solid rgba(2, 59, 2, 0.377);
+    border-radius: 20px;
+    color: black;
+}
+
+.Remember-Me {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: white;
+}
+
+.Remember-Me input {
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.Remember-Me a {
+    text-decoration: none;
+    color: white;
+    margin-left: auto;
+}
+
+#lost-pw:hover {
+    text-decoration: underline;
+}
+
+span {
+    color: red;
+}
+
+#forgot-password a:hover {
+    text-decoration: underline;
+
+}
+
+#register {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#register a:hover {
+    text-decoration: underline;
+}

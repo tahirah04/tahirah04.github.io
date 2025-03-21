@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DaleyCare Pharmaceuticals</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <div class="glass-container">
+        <form id="LoginForm" action="" method="post">
+            <center>
+                <img src="..//Assets/DC Logo.png" alt="DaleyCare Logo" style="width:250px;height:55px;">
+            </center>
+            <legend>Login</legend>
+            <br>
+            <label for="User-mail"> Username or E-mail Address <span>*</span></label><br>
+            <input placeholder="Enter your Username or E-mail Address" type="text" id="name-mail" name="name-mail" required>
+            <br>
+            <br>
+            <label for="login-password"> Password <span>*</span></label><br>
+            <input placeholder="Enter Password" type="password" id="log-password" name="log-password" required>
+                    
+            <div class="Remember-Me">
+                <input type="checkbox" id="remember-me" name="rememberme">
+                <label for="remember-me">Remember me</label>
+                <a href="#" id="lost-pw">Lost your password?</a>
+            </div>
+
+            <input type="submit" onclick="SubmittedData('log-output').innerHTML = output()" value="LOGIN" id="Login-btn">
+
+            <script src="LoginVal.js"></script>
+        </form>
+
+    </div>                
+</body>
+</html>

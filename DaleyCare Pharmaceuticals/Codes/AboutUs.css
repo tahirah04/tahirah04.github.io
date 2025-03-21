@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('..//Assets/Webpage\ Background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-area {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+	height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 ;
+}
+
+.logo {
+	margin: 10px 20px;
+	height: 50px;
+	float: left;
+}
+
+.menu-area {
+	float: right;
+	list-style: none;
+	margin: 20px;
+}
+
+.menu-area li {
+	display: inline-block;
+	margin: 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-area li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+}
+
+.menu-area li a:hover {
+	color: #13a001;
+}
+
+.menu-area #Login-btn {
+    width: 80px;
+    height: 30px;
+    background-color: #13a001;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    box-shadow:0px 2px 2px 0px rgba(0, 0, 0, 0.5), inset 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.menu-area #Login-btn:hover{
+    background-color: rgba(37, 37, 248, 0.575);
+    color: #13a001;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart span {
+    position: absolute;
+    background-color: #13a001;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: -30%;
+    right: -3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#Login-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+
+/**About Us**/
+
+.About-section {
+    background-color: white;
+    margin: 30px 200px;
+    justify-self: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0px 2px 2px 0px rgba(0, 0, 0, 0.5), inset 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.Contact-link {
+    display: block;
+    width: 90px;
+    height: 20px;
+    margin-top: 10px;
+    background-color: #13a001;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:0px 2px 2px 0px rgba(0, 0, 0, 0.5), inset 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.Contact-link:hover {
+    background-color: rgb(37, 37, 248);
+    color: #fff;
+}
+
+/*Footer*/
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+    color: white;
+}
+
+
+
+

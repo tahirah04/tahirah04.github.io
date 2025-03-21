@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <link rel="stylesheet" href="Invoice.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="nav-area">
+        <div class="logo">
+            <img src="..//Assets/DC Logo.png" alt="DaleyCare Logo" style="width:250px;height:55px;">
+        </div>
+    
+        <ul class="menu-area">
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li class="cart">
+                <a href="Invoice.html">
+                    <i class='bx bxs-cart'></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
+            <button id="Login-btn"><a href="Login.html">Login</a></button>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>Invoice</h1>
+    
+    <div class="invoice-container">
+        <header class="company-head">
+            <img src="..//Assets/DC Logo.png" alt="DaleyCare Logo" style="width:250px;height:55px;">
+            <h2>Invoice</h2>
+        </header>
+
+        <table class="invoice-details">
+            <tr>
+                <th><strong>Invoice No.:</strong></th>
+                <td><span id="invoice-number"></span></td>
+            </tr>
+            <tr>
+                <th><strong>Date:</strong></th>
+                <td><span id="invoice-date"></span></td>
+            </tr>
+            <tr>
+                <th><strong>Amount Due:</strong></th>
+                <td><span id="amount-due">$0.00</span> JMD</td>
+            </tr>
+        </table>
+
+        <table class="invoice-table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="invoice-items"></tbody>
+        </table>
+
+        <table class="Totals">
+            <tr>
+                <th><strong>Subtotal:</strong></th>
+                <td><span id="subtotal">$0.00</span> JMD</td>
+            </tr>
+            <tr>
+                <th><strong>Discount (5%):</strong></th>
+                <td><span id="discount">$0.00</span> JMD</td>
+            </tr>
+            <tr>
+                <th><strong>Tax (10%):</strong></th>
+                <td><span id="tax">$0.00</span> JMD</td>
+            </tr>
+            <tr>
+                <th><strong>Balance Due:</strong></th>
+                <td><span id="total">$0.00</span> JMD</td>
+            </tr>
+        </table>
+    </div>
+    <div class="check-out">
+        <button type="reset" id="cancel">Cancel</button>
+        <button type="button" id="exit">Exit</button>
+    </div>
+    <script src="Invoice.js"></script>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2025 DaleyCare Pharmaceuticals. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

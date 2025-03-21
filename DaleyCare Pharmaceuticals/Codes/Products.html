@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="Products.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="nav-area">
+        <div class="logo">
+            <img src="..//Assets/DC Logo.png" alt="DaleyCare Logo" style="width:250px;height:55px;">
+        </div>
+    
+        <ul class="menu-area">
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li class="cart">
+                <a href="Invoice.html">
+                    <i class='bx bxs-cart'></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
+            <button id="Login-btn"><a href="Login.html">Login</a></button>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>Products</h1>
+    
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="..//Assets/Ibuprofen.jpg" alt="Ibuprofen">
+            <div class="name">Equate Ibuprofen Pain Reliever/Fever Reducer Coated Tablets, 200mg, 100 Count</div>
+            <div class="price">$800.00 JMD</div>
+            <div class="hover-options">
+                <div class="quantity">
+                    <button onclick="addtoCart('prod1', -1)">-</button>
+                    <input type="text" id="prod1" name="prod1" min="1" value="1">
+                    <button onclick="addtoCart('prod1', 1)">+</button>
+                </div>
+                <button id="cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="..//Assets/Cetamol.jpg" alt="Cetamol">
+            <div class="name">Cetamol Cold & Flu Nightime (20 Tablets)</div>
+            <div class="price">$650.00 JMD</div>
+            <div class="hover-options">
+                <div class="quantity">
+                    <button onclick="addtoCart('prod2', -1)">-</button>
+                    <input type="text" id="prod2" name="prod2" min="1" value="1">
+                    <button onclick="addtoCart('prod2', 1)">+</button>
+                </div>
+                <button id="cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="..//Assets/flinstone gummies.jpg" alt="Flingstone Gummies">
+            <div class="name">Flintstones Gummies Comp.180's</div>
+            <div class="price">$3,500.00 JMD</div>
+            <div class="hover-options">
+                <div class="quantity">
+                    <button onclick="addtoCart('prod3', -1)">-</button>
+                    <input type="text" id="prod3" name="prod3" min="1" value="1">
+                    <button onclick="addtoCart('prod3', 1)">+</button>
+                </div>
+                <button id="cart">Add to Cart</button>            
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="..//Assets/Hair and Nail Gummies.jpg" alt="Natures Bounty Hair Skin Nails Gummies With Biotin (1Gummy)">
+            <div class="name">Natures Bounty Hair Skin Nails Gummies With Biotin (1 Gummy)</div>
+            <div class="price">$1,850.00 JMD</div>
+            <div class="hover-options">
+                <div class="quantity">
+                    <div class="quantity">
+                        <button onclick="addtoCart('prod4', -1)">-</button>
+                        <input type="text" id="prod4" name="prod4" min="1" value="1">
+                        <button onclick="addtoCart('prod4', 1)">+</button>
+                    </div>
+                </div>
+                <button id="cart">Add to Cart</button>        
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="..//Assets/Bandaid.jpg" alt="Bandaid">
+            <div class="name">Band-Aid Flexible Fabric Adhesive Bandages 3/4" X 3" 100 Ct</div>
+            <div class="price">$1,500.00 JMD</div>
+            <div class="hover-options">
+                <div class="quantity">
+                    <div class="quantity">
+                        <button onclick="addtoCart('prod5', -1)">-</button>
+                        <input type="text" id="prod5" name="prod5" min="1" value="1">
+                        <button onclick="addtoCart('prod5', 1)">+</button>
+                    </div>
+                </div>
+                <button id="cart">Add to Cart</button>            
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="..//Assets/Sling.jpg" alt="Arm Sling">
+            <div class="name">Carex Arm Slings Universal</div>
+            <div class="price">$3,360.00 JMD</div>
+            <div class="hover-options">
+                <div class="quantity">
+                    <div class="quantity">
+                        <button onclick="addtoCart('prod6', -1)">-</button>
+                        <input type="text" id="prod6" name="prod6" min="1" value="1">
+                        <button onclick="addtoCart('prod6', 1)">+</button>
+                    </div>
+                </div>
+                <button id="cart">Add to Cart</button>            
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="..//Assets/Crutches.jpg" alt="Crutches">
+            <div class="name">Medline Adjustable Quick-Fit Crutches, 4'7"- 6'7", 300 lbs. Capacity</div>
+            <div class="price">$6,700.00 JMD</div>
+            <div class="hover-options">
+                <div class="quantity">
+                    <div class="quantity">
+                        <button onclick="addtoCart('prod7', -1)">-</button>
+                        <input type="text" id="prod7" name="prod7" min="1" value="1">
+                        <button onclick="addtoCart('prod7', 1)">+</button>
+                    </div>
+                </div>
+                <button id="cart">Add to Cart</button>            
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="..//Assets/Roller.jpg" alt="Roller">
+            <div class="name">Walker W/Wheels Folding</div>
+            <div class="price">$15,000.00 JMD</div>
+            <div class="hover-options">
+                <div class="quantity">
+                    <div class="quantity">
+                        <button onclick="addtoCart('prod', -1)">-</button>
+                        <input type="text" id="prod8" name="prod8" min="1" value="1">
+                        <button onclick="addtoCart('prod8', 1)">+</button>
+                    </div>
+                </div>
+                <button id="cart">Add to Cart</button>            
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="..//Assets/Wheelchair.jpg" alt="Wheelchair">
+            <div class="name">Medline Comfortable Folding Manual Wheelchair with Swing-Back Arms, Elevating Footrests, 20" Seat</div>
+            <div class="price">$25,800.00 JMD</div>
+            <div class="hover-options">
+                <div class="quantity">
+                    <div class="quantity">
+                        <button onclick="addtoCart('prod9', -1)">-</button>
+                        <input type="text" id="prod9" name="prod9" min="1" value="1">
+                        <button onclick="addtoCart('prod9', 1)">+</button>
+                    </div>
+                </div>
+                <button id="cart">Add to Cart</button>            
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="check-out">
+        <button type="submit" id="checkout">Check Out</button>
+        <button type="reset" id="cancel">Cancel</button>
+        <button type="button" id="exit">Exit</button>
+    </div>
+
+    <script src="Products.js"></script>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2025 DaleyCare Pharmaceuticals. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
